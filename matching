@@ -8,8 +8,8 @@ def configure():
 		except:
 			group number = 1,2,3,4,5,6
 			print "Couldn't parse number. Going with default!"
-		month = raw_input("What is your latitude?[28.61]") or '28.61'
-		date = raw_input("What is your longitude?[77.20]") or '77.20'
+		month = raw_input("When you plan to visit?[January]") or 'Jan.'
+		date = raw_input("When you plan to visit?[77.20]") or '77.20'
 		url = "https://developers.zomato.com/api/v2.1/cities?lat=%s&lon=%s" %(lat, lon)
 		city_id = False
 		headers = {'Accept' : 'application/json', 'user_key': api_key, 'User-Agent': 'curl/7.35.0'}
